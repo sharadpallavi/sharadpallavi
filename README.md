@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @sharadpallavi
 - 👀 I’m interested in Web Development 
-- 🌱 I’m currently learning C++, Python 
+- 🌱 I’m currently learning C++, Python, C 
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
