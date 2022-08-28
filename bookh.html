@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Booking of Hotel</title>
+<style>
+label
+{
+	color:Blue;
+}
+h1
+{
+	 background-color:Lightskyblue;
+	 color:Drakblue;
+}
+button.c1{
+	 background-color:tomato;
+	border: none;
+	color:white;
+	width:250px;
+	height:50px;
+	margin-left:45px;
+	font-size:18px;
+	
+	font-weight: bold;
+}
+
+h1{
+	font-size:40px;
+	align:centre;
+	padding-left:100px;
+	background-color:#cc99ff;
+	color:black;
+	padding-top:10px;
+                      padding-bottom:15px;
+	height:40px;
+	margin-top:10px;
+	border-radius:10px;
+	margin-right:25px;
+                     border-width:15px;
+                      border=6; 
+                      border-style: groove;
+                     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+                     text-align:center;  
+                   text-color:Green;
+}
+
+body{
+ 
+border:10px outset orange; 
+ border=6; 
+border-color:#009999;
+ 
+}
+fieldset {
+background-color: #c6c6ec;
+border-width:15px; 
+border-style: 30px groove teal ;
+border-color:#000066;
+}
+label{
+	font-size:15px;
+}
+</style>
+</head>
+<body bgcolor="#c6c6ec" >
+<fieldset>
+<a href="Home.html"><button class="c1">Home</button> </a>
+<a href=""><button class="c1">Back</button></a>
+<form autocomplete="on" onsubmit="return ajaxpost()">
+<h1 ><centre><b><u>Booking of Hotel</u></b></center></h1><br>
+
+<legend><span style="font-size:20px;">Personal Details:</span></legend>
+<label><b><span style="font-size:20px;">Name</span></b></label>
+<input type="text" name="Name" placeholder="Name" size="30" required autofocus><br><br>
+
+<label><b><span style="font-size:20px;">Email :</span> </b></label>  
+<input type="email" placeholder="Enter Email" name="email" required><br> 
+   
+<label><b><span style="font-size:20px;">Phone : </span></b></label>
+<input type="text" name="Country code" value="+91" size="2" >
+<input type="tel" name="phone" placeholder="1234-567-890" size="10" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"><br> 
+
+
+<label><b><span style="font-size:20px;">Country Name</span></b></label>
+<input type="text" name="Country Name" placeholder="Country" size="50" width="30" required autofocus><br><br>
+
+<label><b><span style="font-size:20px;" color:"black;">No.of total person</span></b></label>
+<input type="number" placeholder="Person" name="Ad. No." min="1" max="10000" ><br><br>  
+
+<label><b> <span style="font-size:20px;">Total Male:</span></b></label><br>    
+<input type="checkbox"  value="1" > 1
+<input type="checkbox"  value="2" > 2 
+<input type="checkbox"  value="3" > 3 
+<input type="checkbox"  value="4" > 4<br><br>
+
+<label><b> <span style="font-size:20px;">Total Female:</span></b></label><br>    
+<input type="checkbox"  value="1" > 1
+<input type="checkbox"  value="2" > 2 
+<input type="checkbox"  value="3" > 3 
+<input type="checkbox"  value="4" > 4<br><br>
+
+<label><b> <span style="font-size:20px;">Total kids:</span></b></label><br>    
+<input type="checkbox"  value="1" > 1
+<input type="checkbox"  value="2" > 2 
+<input type="checkbox"  value="3" > 3 
+<input type="checkbox"  value="4" > 4<br><br>
+ 
+<label><b> <span style="font-size:20px;">No. of days :</span></b></label><br>  
+<input type="number" placeholder="days" name="Ad. No." min="1" max="10" ><br><br> 
+</fieldset> 
+<fieldset>
+<legend><span style="font-size:20px;">Bank Details:</legend> 
+<label><b><span style="font-size:20px;">Bank Name</span></b></label><br>
+<input type="radio" value="SBI">SBI<br>  
+<input type="radio" value="Canara Bank" >Canara Bank <br>   
+<input type="radio" value="Indian Bank" >Indian Ban <br>
+<input type="radio" value="Central Bank of India" >Central Bank of India <br><br>     
+ 
+
+<label><b><span style="font-size:20px;">Password : </span></b></label> 
+<input type="password" placeholder="Enter Password" name="psw" required> <br><br>  
+ 
+<label><b><span style="font-size:20px;">Re-type Password : </span></b></label> 
+<input type="password" placeholder="Retype Password" name="psw-repeat" required> <br><br>  
+ 
+<input type="reset">
+<button onclick="Confirmation()">Book now</button>
+ <script>
+function Confirmation() {
+  confirm("Your booking is succussful.");
+}
+</script>
+ </feildset>
+</form>
+</body>
+</html>
+
+
+
+ 
